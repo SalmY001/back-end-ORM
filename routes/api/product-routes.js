@@ -27,7 +27,7 @@ router.get('/', (req, res) => {
 
 // get one product
 router.get('/:id', (req, res) => {
-  Category.findOne({
+  Product.findOne({
     where: {
       id: req.params.id,
     },
@@ -38,14 +38,41 @@ router.get('/:id', (req, res) => {
       },
     ],
   })
-  .then((category) =>res.json(category))
+  .then((products) =>res.json(products))
   .catch((err) =>res.status(400).json(err))
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
 });
 
-// create new product
 router.post('/', (req, res) => {
+  Product.create(req.body, {
+    include: [
+      Category,
+      {
+        model: Tag,
+        through: ProductTag,
+      },
+    ],
+  })
+  .then((products) => res.status(200).json(products))
+  .catch((err) => res.status(400).json(err));
+});
+
+// create new product
+router.put('/', (req, res) => {
+  Product.update(req.body, {
+    where: {
+      id: req.params.id,
+    },
+    // include: [Category,
+    //   {
+    //     model: Tag,
+    //     through: ProductTag,
+    //   },
+    // ],
+  })
+  .then((products) => res.status(200).json(products))
+  .catch((err) => res.status(400).json(err));
   /* req.body should look like this...
     {
       product_name: "Basketball",
