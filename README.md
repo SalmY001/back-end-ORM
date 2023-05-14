@@ -20,8 +20,6 @@ Development of an E-commerce back-end for a site which uses Express.js API and i
 
 To install the required dependencies, run the following command:
 
-npm i inquirer
-
 npm i express
 
 npm i mysql2
