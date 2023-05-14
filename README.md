@@ -45,7 +45,7 @@ Please refer to the license in the repo.
 
 Sources viewed to help in the development of the app include:
 
-N/A
+https://sequelize.org/
 
 ## Tests
 
