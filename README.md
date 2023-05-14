@@ -14,7 +14,7 @@
 
 ## Description
 
-Development of an E-commerce back-end for a site which uses Express.js API and is configured using Sequelize to inteact with a MySQL database.
+Development of an e-commerce back-end for a site which uses Express.js API and is configured using Sequelize to interact with a MySQL database.
 
 ## Installation
 
