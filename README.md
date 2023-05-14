@@ -1,6 +1,6 @@
 # E-commerce Back-End Merchandise
 
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
 
@@ -36,8 +36,8 @@ https://drive.google.com/file/d/15yqOvksTtS1RHejYBpy5A-iBJWfDgZ73/view?usp=share
 
 ## License
 
-This project is under the ISC license:
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+This project is under the MIT license:
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Please refer to the license in the repo.
 
